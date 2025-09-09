@@ -1,15 +1,18 @@
-import sumar from "./sumador";
+//import sumar from "./sumador";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const entrada = document.querySelector("#entrada");
+const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
+const registrarHoraBtn = document.querySelector("#registrar-hora");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+registrarHoraBtn.addEventListener("click", () => {
+  const fechaHoraEntrada = entrada.value;
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  if (!fechaHoraEntrada) {
+    div.innerHTML = "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
+  } else {
+    div.innerHTML = `
+      <p>Fecha y hora de entrada del vehículo: ${fechaHoraEntrada}</p>
+    `;
+  }
 });
