@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "48a83889ab2e4f419ad78cc3c24c43692fe21d97",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-09T13:50:05.000Z",
       "message": "feat: Creacion de la funcion registrar hora de entrada",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/48a83889ab2e4f419ad78cc3c24c43692fe21d97"
     },
     "stats": {
       "total": 19,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-09T14:17:34.000Z",
+      "message": "feat: Crear una funcion para registrar cualquier hora de entrada",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 9,
+      "deletions": 6,
+      "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }

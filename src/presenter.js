@@ -1,4 +1,4 @@
-//import sumar from "./sumador";
+import { guardarHoraEntrada } from "./funcionesEst.js";
 
 const entrada = document.querySelector("#entrada");
 const registrarHoraEntBtn = document.querySelector("#registrar-horaEnt");
@@ -8,13 +8,14 @@ const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
 
 registrarHoraEntBtn.addEventListener("click", () => {
-  const fechaHoraEntrada = entrada.value;
+   const fechaHoraEntrada = entrada.value;
   if (!fechaHoraEntrada) {
     div.innerHTML += "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
   } else {
     div.innerHTML += `
       <p>Fecha y hora de entrada del vehículo: ${fechaHoraEntrada}</p>
     `;
+    guardarHoraEntrada(fechaHoraEntrada); 
   }
 });
 registrarHoraSalBtn.addEventListener("click", () => {
