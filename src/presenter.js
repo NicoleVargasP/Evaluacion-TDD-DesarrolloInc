@@ -7,22 +7,22 @@ const registrarHoraSalBtn = document.querySelector("#registrar-horaSal");
 const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
 
-registrarHoraBtnEnt.addEventListener("click", () => {
+registrarHoraEntBtn.addEventListener("click", () => {
   const fechaHoraEntrada = entrada.value;
   if (!fechaHoraEntrada) {
-    div.innerHTML = "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
+    div.innerHTML += "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
   } else {
-    div.innerHTML = `
+    div.innerHTML += `
       <p>Fecha y hora de entrada del vehículo: ${fechaHoraEntrada}</p>
     `;
   }
 });
-registrarHoraBtnSal.addEventListener("click", () => {
+registrarHoraSalBtn.addEventListener("click", () => {
   const fechaHoraSalida = salida.value;
   if (!fechaHoraSalida) {
-    div.innerHTML = "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
+    div.innerHTML += "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
   } else {
-    div.innerHTML = `
+    div.innerHTML += `
       <p>Fecha y hora de salida del vehículo: ${fechaHoraSalida}</p>
     `;
   }
