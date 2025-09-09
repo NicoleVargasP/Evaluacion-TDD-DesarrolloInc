@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "08df7b17e17bb2267b8042a129047c127430fb86",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-09T13:31:54.000Z",
       "message": "fix: correccion de agregar fecha y hora",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/08df7b17e17bb2267b8042a129047c127430fb86"
     },
     "stats": {
       "total": 12,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-09T13:50:05.000Z",
+      "message": "feat: Creacion de la funcion registrar hora de entrada",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
