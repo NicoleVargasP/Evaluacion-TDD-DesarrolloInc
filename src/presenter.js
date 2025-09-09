@@ -1,13 +1,14 @@
 //import sumar from "./sumador";
 
 const entrada = document.querySelector("#entrada");
+const registrarHoraEntBtn = document.querySelector("#registrar-horaEnt");
+const salida = document.querySelector("#salida");
+const registrarHoraSalBtn = document.querySelector("#registrar-horaSal");
 const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
-const registrarHoraBtn = document.querySelector("#registrar-hora");
 
-registrarHoraBtn.addEventListener("click", () => {
+registrarHoraBtnEnt.addEventListener("click", () => {
   const fechaHoraEntrada = entrada.value;
-
   if (!fechaHoraEntrada) {
     div.innerHTML = "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
   } else {
@@ -16,3 +17,14 @@ registrarHoraBtn.addEventListener("click", () => {
     `;
   }
 });
+registrarHoraBtnSal.addEventListener("click", () => {
+  const fechaHoraSalida = salida.value;
+  if (!fechaHoraSalida) {
+    div.innerHTML = "<p style='color:red;'>⚠️ Por favor selecciona una fecha y hora</p>";
+  } else {
+    div.innerHTML = `
+      <p>Fecha y hora de salida del vehículo: ${fechaHoraSalida}</p>
+    `;
+  }
+});
+

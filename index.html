@@ -4,11 +4,14 @@
     <title>Cálculo de tarifas de estacionamiento</title>
   </head>
   <body>
-    <h1>Cálculo de tarifas de estacionamiento</h1>
+    <h1>Cálculo de Tarifas de Estacionamiento</h1>
     <form id="estacionamiento-form">
        <label for="entrada">Fecha y hora de entrada del vehiculo:</label>
   <input type="datetime-local" id="entrada" required />
-  <button type="button" id="registrar-hora">Registrar hora</button>
+  <button type="button" id="registrar-horaEnt">Registrar hora entrada</button>
+  <label for="salida">Fecha y hora de salida del vehiculo:</label>
+  <input type="datetime-local" id="salida" required />
+  <button type="button" id="registrar-horaSal">Registrar hora salida</button>
     </form>
     <div id="resultado-div"></div>
 
