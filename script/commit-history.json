@@ -57,18 +57,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e6ad150b34077cd7f9b371e74695b3dedb6a58bf",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-09T14:17:34.000Z",
       "message": "feat: Crear una funcion para registrar cualquier hora de entrada",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/e6ad150b34077cd7f9b371e74695b3dedb6a58bf"
     },
     "stats": {
       "total": 15,
       "additions": 9,
       "deletions": 6,
       "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T02:59:50.000Z",
+      "message": "feat: creacion de la funcion para guardar una hora de salida",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 9,
+      "deletions": 16,
+      "date": "2025-09-10"
     },
     "coverage": 100,
     "test_count": 3,
