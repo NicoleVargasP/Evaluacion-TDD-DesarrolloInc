@@ -8,7 +8,10 @@ describe("FuncionesEstacionamiento", () => {
     expect(guardarHoraEntrada("10:15")).toEqual("10:15");
   });
    it("deberia mostrar la hora de salida", () => {
-    expect(guardarHoraSalida()).toEqual("11:15");
+    expect(guardarHoraSalida("11:15")).toEqual("11:15");
+  });
+  it("deberia mostrar la hora de salida", () => {
+    expect(guardarHoraSalida("11:30")).toEqual("11:30");
   });
 });
 
