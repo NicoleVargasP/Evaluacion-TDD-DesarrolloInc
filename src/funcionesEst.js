@@ -3,8 +3,7 @@ let horaSalida = null;
 let tarifa = 10;
 let tarifaMax =50;  
 let tarifaNocturna = 6;
-const horaSiguiente = 0;
-let total = 0;
+let tieneTicket = false;
 
 function guardarHoraEntrada(fechaHoraEntrada) {
     horaEntrada = fechaHoraEntrada;
@@ -21,8 +20,7 @@ function calcularTarifa() {
 
   if (salida <= entrada)
      return "La salida debe ser posterior";
-
-  let total = 0;
+    let total = 0;
   let horaActual = new Date(entrada);
 
   while (horaActual < salida) {
@@ -38,4 +36,15 @@ function calcularTarifa() {
   if (total > tarifaMax) return tarifaMax;
   return parseFloat(total.toFixed(2));
 }
-export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa};
+function perdidaTicket(tieneTicket){ 
+    let tarifaTicket;
+    let multa = 80;
+if (tieneTicket === false){ 
+    tarifaTicket = multa;
+}
+else { 
+    tarifaTicket = calcularTarifa();  
+}
+return tarifaTicket
+}
+export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket};

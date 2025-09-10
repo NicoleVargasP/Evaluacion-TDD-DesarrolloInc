@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bf594c3ab4dc69fd4136320db9fe71751469e70d",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T20:27:22.000Z",
       "message": "refactor: La funcion calcular tarifa muestra el resultado con 2 decimales",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/bf594c3ab4dc69fd4136320db9fe71751469e70d"
     },
     "stats": {
       "total": 12,
@@ -243,6 +243,25 @@
     },
     "coverage": 96.15,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T21:14:50.000Z",
+      "message": "feat: se creo una funcion para multar 80 bs si se perdio el ticket",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 20,
+      "deletions": 7,
+      "date": "2025-09-10"
+    },
+    "coverage": 93.33,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
