@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b5b2fb70eabc030188f976d2d2226f62d6ff53c",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T20:09:59.000Z",
       "message": "refactor: se agrego la condicion de que cobre 6 Bs en la noche",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/9b5b2fb70eabc030188f976d2d2226f62d6ff53c"
     },
     "stats": {
       "total": 47,
@@ -205,6 +205,25 @@
     },
     "coverage": 96.15,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T20:19:16.000Z",
+      "message": "fix: correcion de la funcion calcular tarifa respecto a la tarifa de noche",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-09-10"
+    },
+    "coverage": 96.15,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
