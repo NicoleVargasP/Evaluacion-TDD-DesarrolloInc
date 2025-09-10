@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7f84bca11f45d3b6c86ed09af9130929270167b1",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T04:43:52.000Z",
       "message": "refactor: La funcion calcular tarifa ahora calcula la tarifa de cualquier hora guardada",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/7f84bca11f45d3b6c86ed09af9130929270167b1"
     },
     "stats": {
       "total": 18,
       "additions": 14,
       "deletions": 4,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T04:57:26.000Z",
+      "message": "style: creacion del boton para calcular tarifa",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 7,
+      "deletions": 2,
       "date": "2025-09-10"
     },
     "coverage": 100,

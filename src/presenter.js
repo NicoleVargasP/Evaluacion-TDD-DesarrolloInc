@@ -1,9 +1,10 @@
-import { guardarHoraEntrada, guardarHoraSalida } from "./funcionesEst.js";
+import { guardarHoraEntrada, guardarHoraSalida, calcularTarifa } from "./funcionesEst.js";
 
 const entrada = document.querySelector("#entrada");
 const registrarHoraEntBtn = document.querySelector("#registrar-horaEnt");
 const salida = document.querySelector("#salida");
 const registrarHoraSalBtn = document.querySelector("#registrar-horaSal");
+const calcularTarifaBtn = document.querySelector("#calcular-tarifa");
 const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
 
@@ -29,4 +30,7 @@ registrarHoraSalBtn.addEventListener("click", () => {
     guardarHoraSalida(fechaHoraSalida); 
   }
 });
-
+calcularTarifaBtn.addEventListener("click", () => {
+  const total = calcularTarifa();
+  div.innerHTML += `<p><b>Total a pagar:</b> Bs ${total}.00</p>`;
+});
