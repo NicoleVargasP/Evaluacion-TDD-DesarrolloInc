@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "01782b8aef326a9b5bc3c469c9ec9505a7dbe82d",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T05:17:46.000Z",
       "message": "refactor: Se valido la tarifa maxima de 50 bs",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/01782b8aef326a9b5bc3c469c9ec9505a7dbe82d"
     },
     "stats": {
       "total": 16,
@@ -186,6 +186,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T20:09:59.000Z",
+      "message": "refactor: se agrego la condicion de que cobre 6 Bs en la noche",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 33,
+      "deletions": 14,
+      "date": "2025-09-10"
+    },
+    "coverage": 96.15,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

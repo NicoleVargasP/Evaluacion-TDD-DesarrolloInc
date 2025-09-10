@@ -28,6 +28,12 @@ describe("FuncionesEstacionamiento", () => {
     guardarHoraSalida("2025-09-09T18:00");
     expect(calcularTarifa()).toEqual(50);
   }); 
+   it("deberia validar que la tarifa maxima a cobrar de noche es 6 Bs", () => {
+    guardarHoraEntrada("2025-09-09T20:00");
+    guardarHoraSalida("2025-09-09T23:00");
+    expect(calcularTarifa()).toEqual(26);
+  }); 
+    
 });
 
 
