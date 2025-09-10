@@ -11,9 +11,12 @@ function guardarHoraSalida(fechaHoraSalida) {
   //console.log("Se registro la hora de entrada: ", horaEntrada);
 }
 function calcularTarifa() {
-  let tarifa = 10
-  let numHoras = 2
-  return tarifa * numHoras
+  let tarifa = 10;
+  const entradaDate = new Date(horaEntrada);
+  const salidaDate = new Date(horaSalida);
+  const diffMs = salidaDate - entradaDate;
+  const diffHoras = Math.ceil(diffMs / (3600000));
 
+  return diffHoras * tarifa;
 }
 export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa};

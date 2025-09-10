@@ -14,9 +14,16 @@ describe("FuncionesEstacionamiento", () => {
     expect(guardarHoraSalida("11:30")).toEqual("11:30");
   }); 
    it("deberia calcular la tarifa de las horas d estacionamiento", () => {
+     guardarHoraEntrada("2025-09-09T11:00");
+     guardarHoraSalida("2025-09-09T13:00");
     expect(calcularTarifa()).toEqual(20);
+  });  
+  it("deberia calcular cualquier tarifa de las horas d estacionamiento", () => {
+    guardarHoraEntrada("2025-09-09T12:00");
+    guardarHoraSalida("2025-09-09T16:00");
+    expect(calcularTarifa()).toEqual(40);
   }); 
-  
+
 });
 
 
