@@ -1,4 +1,4 @@
-import { guardarHoraEntrada } from "./funcionesEst.js";
+import { guardarHoraEntrada, guardarHoraSalida } from "./funcionesEst.js";
 
 const entrada = document.querySelector("#entrada");
 const registrarHoraEntBtn = document.querySelector("#registrar-horaEnt");
@@ -26,6 +26,7 @@ registrarHoraSalBtn.addEventListener("click", () => {
     div.innerHTML += `
       <p>Fecha y hora de salida del vehículo: ${fechaHoraSalida}</p>
     `;
+    guardarHoraSalida(fechaHoraSalida); 
   }
 });
 

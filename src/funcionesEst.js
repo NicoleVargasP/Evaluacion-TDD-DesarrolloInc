@@ -10,4 +10,10 @@ function guardarHoraSalida(fechaHoraSalida) {
     return horaSalida
   //console.log("Se registro la hora de entrada: ", horaEntrada);
 }
-export {guardarHoraEntrada, guardarHoraSalida};
+function calcularTarifa() {
+  let tarifa = 10
+  let numHoras = 2
+  return tarifa * numHoras
+
+}
+export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa};

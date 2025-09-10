@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9ea2d8b85fea148f98b05abd27cdccb9115d7f34",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T03:03:45.000Z",
       "message": "feat: Creacion de la funcion para guardar cualquier hora de salida",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/9ea2d8b85fea148f98b05abd27cdccb9115d7f34"
     },
     "stats": {
       "total": 9,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T04:32:04.000Z",
+      "message": "feat: creacion de la funcion para calcular una tarifa",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 16,
+      "deletions": 5,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

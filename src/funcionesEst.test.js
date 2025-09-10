@@ -1,4 +1,4 @@
-import {guardarHoraEntrada, guardarHoraSalida} from "./funcionesEst.js";
+import {guardarHoraEntrada, guardarHoraSalida, calcularTarifa} from "./funcionesEst.js";
 
 describe("FuncionesEstacionamiento", () => {
   it("deberia mostrar la hora de entreda", () => {
@@ -10,9 +10,13 @@ describe("FuncionesEstacionamiento", () => {
    it("deberia mostrar la hora de salida", () => {
     expect(guardarHoraSalida("11:15")).toEqual("11:15");
   });
-  it("deberia mostrar la hora de salida", () => {
+  it("deberia mostrar cualquier hora de salida", () => {
     expect(guardarHoraSalida("11:30")).toEqual("11:30");
-  });
+  }); 
+   it("deberia calcular la tarifa de las horas d estacionamiento", () => {
+    expect(calcularTarifa()).toEqual(20);
+  }); 
+  
 });
 
 
