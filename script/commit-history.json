@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c772f73092cc4e3ef87bf82eb7ff09f854f20c9f",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T20:19:16.000Z",
       "message": "fix: correcion de la funcion calcular tarifa respecto a la tarifa de noche",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/c772f73092cc4e3ef87bf82eb7ff09f854f20c9f"
     },
     "stats": {
       "total": 5,
       "additions": 5,
       "deletions": 0,
+      "date": "2025-09-10"
+    },
+    "coverage": 96.15,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T20:27:22.000Z",
+      "message": "refactor: La funcion calcular tarifa muestra el resultado con 2 decimales",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
       "date": "2025-09-10"
     },
     "coverage": 96.15,

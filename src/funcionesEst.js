@@ -36,6 +36,6 @@ function calcularTarifa() {
     horaActual = new Date(horaActual.getTime() + 3600000); 
   }
   if (total > tarifaMax) return tarifaMax;
-  return total;
+  return parseFloat(total.toFixed(2));
 }
 export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa};

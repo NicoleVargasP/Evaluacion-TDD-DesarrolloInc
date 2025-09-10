@@ -16,27 +16,27 @@ describe("FuncionesEstacionamiento", () => {
    it("deberia calcular la tarifa de las horas d estacionamiento", () => {
      guardarHoraEntrada("2025-09-09T11:00");
      guardarHoraSalida("2025-09-09T13:00");
-    expect(calcularTarifa()).toEqual(20);
+    expect(calcularTarifa()).toEqual(20.00);
   });  
   it("deberia calcular cualquier tarifa de las horas d estacionamiento", () => {
     guardarHoraEntrada("2025-09-09T12:00");
     guardarHoraSalida("2025-09-09T16:00");
-    expect(calcularTarifa()).toEqual(40);
+    expect(calcularTarifa()).toEqual(40.00);
   }); 
   it("deberia validar que el monto maximo sea 50 Bs", () => {
     guardarHoraEntrada("2025-09-09T10:00");
     guardarHoraSalida("2025-09-09T18:00");
-    expect(calcularTarifa()).toEqual(50);
+    expect(calcularTarifa()).toEqual(50.00);
   }); 
    it("deberia validar que la tarifa maxima a cobrar de noche es 6 Bs", () => {
     guardarHoraEntrada("2025-09-09T20:00");
     guardarHoraSalida("2025-09-09T23:00");
-    expect(calcularTarifa()).toEqual(26);
+    expect(calcularTarifa()).toEqual(26.00);
   }); 
    it("deberia validar que la tarifa maxima a cobrar de noche es 6 Bs", () => {
     guardarHoraEntrada("2025-09-09T22:00");
     guardarHoraSalida("2025-09-10T02:00");
-    expect(calcularTarifa()).toEqual(24);
+    expect(calcularTarifa()).toEqual(24.00);
   });
     
 });
