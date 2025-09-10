@@ -23,7 +23,11 @@ describe("FuncionesEstacionamiento", () => {
     guardarHoraSalida("2025-09-09T16:00");
     expect(calcularTarifa()).toEqual(40);
   }); 
-
+  it("deberia validar que el monto maximo sea 50 Bs", () => {
+    guardarHoraEntrada("2025-09-09T10:00");
+    guardarHoraSalida("2025-09-09T18:00");
+    expect(calcularTarifa()).toEqual(50);
+  }); 
 });
 
 

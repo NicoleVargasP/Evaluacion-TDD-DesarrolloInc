@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "10f18473f8a73f9793d73fb3418b840bbb4db5ae",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T04:57:26.000Z",
       "message": "style: creacion del boton para calcular tarifa",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/10f18473f8a73f9793d73fb3418b840bbb4db5ae"
     },
     "stats": {
       "total": 9,
@@ -167,6 +167,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-10T05:17:46.000Z",
+      "message": "refactor: Se valido la tarifa maxima de 50 bs",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 13,
+      "deletions": 3,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
