@@ -247,18 +247,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3ec24b71046c97eb5d832a463036cdc493c74e10",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-10T21:14:50.000Z",
       "message": "feat: se creo una funcion para multar 80 bs si se perdio el ticket",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/3ec24b71046c97eb5d832a463036cdc493c74e10"
     },
     "stats": {
       "total": 27,
       "additions": 20,
       "deletions": 7,
       "date": "2025-09-10"
+    },
+    "coverage": 93.33,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-11T00:46:17.000Z",
+      "message": "style: Creacion del boton de verificacion de ticket d estacionamiento",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 32,
+      "deletions": 8,
+      "date": "2025-09-11"
     },
     "coverage": 93.33,
     "test_count": 10,

@@ -18,8 +18,9 @@ function calcularTarifa() {
   const entrada = new Date(horaEntrada);
   const salida = new Date(horaSalida);
 
-  if (salida <= entrada)
+  if (salida <= entrada){
      return "La salida debe ser posterior";
+  }
     let total = 0;
   let horaActual = new Date(entrada);
 

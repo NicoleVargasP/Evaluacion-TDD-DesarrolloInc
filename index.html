@@ -12,7 +12,15 @@
   <label for="salida">Fecha y hora de salida del vehiculo:</label>
   <input type="datetime-local" id="salida" required />
   <button type="button" id="registrar-horaSal">Registrar hora salida</button>
-    <button type="button" id="calcular-tarifa">Calcular Tarifa</button> 
+
+  <button type="button" id="mostrar-ticket">Tiene el ticket de estacionamiento?</button>
+<div id="opciones-ticket" style="display:none; margin-top:5px;">
+  <input type="radio" id="con-ticket" name="ticket" value="con" checked />
+  <label for="con-ticket">Cuenta con el ticket</label><br>
+  <input type="radio" id="sin-ticket" name="ticket" value="sin" />
+  <label for="sin-ticket">No cuenta con el ticket (perdido)</label>
+</div>
+  <button type="button" id="calcular-tarifa">Calcular Tarifa</button> 
     </form>
     <div id="resultado-div"></div>
 
