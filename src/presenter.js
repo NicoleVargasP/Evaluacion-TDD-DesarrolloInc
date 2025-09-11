@@ -1,4 +1,4 @@
-import { guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket } from "./funcionesEst.js";
+import { guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket,calcularTarifaDias } from "./funcionesEst.js";
 
 const entrada = document.querySelector("#entrada");
 const registrarHoraEntBtn = document.querySelector("#registrar-horaEnt");
@@ -43,20 +43,25 @@ registrarHoraSalBtn.addEventListener("click", () => {
 calcularTarifaBtn.addEventListener("click", () => {
   const ticketSeleccionado = document.querySelector('input[name="ticket"]:checked').value;
   const tieneTicket = ticketSeleccionado === "con";
+  div.innerHTML += "<hr>"; // separador sencillo
+
   if (!tieneTicket) {
     div.innerHTML += `<p><b>Total a pagar:</b> Bs 80 (multa por ticket perdido)</p>`;
     return;
   }
+
   const tarifaDetallada = calcularTarifaDias();
 
   if (tarifaDetallada === null) {
     div.innerHTML += `<p>La salida debe ser posterior a la entrada</p>`;
     return;
   }
-  div.innerHTML += `<h3>Desglose por día:</h3>`;
+
+  div.innerHTML += `<p><b>Desglose por día:</b></p>`;
   for (const dia in tarifaDetallada.desglose) {
     const detalle = tarifaDetallada.desglose[dia];
-    div.innerHTML += `<p><b>${dia}</b> → Subtotal: Bs ${detalle.subtotal}, Cobrado: Bs ${detalle.cobrado}</p>`;
+    div.innerHTML += `<p>${dia} → Subtotal: Bs ${detalle.subtotal}, Cobrado: Bs ${detalle.cobrado}</p>`;
   }
+
   div.innerHTML += `<p><b>Total a pagar:</b> Bs ${tarifaDetallada.total.toFixed(2)}</p>`;
 });
