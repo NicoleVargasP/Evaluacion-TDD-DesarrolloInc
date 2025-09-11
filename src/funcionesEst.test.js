@@ -1,4 +1,4 @@
-import {guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket} from "./funcionesEst.js";
+import {guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket, calcularTarifaDias} from "./funcionesEst.js";
 
 describe("FuncionesEstacionamiento", () => {
   it("deberia mostrar la hora de entreda", () => {
@@ -47,7 +47,7 @@ describe("FuncionesEstacionamiento", () => {
     guardarHoraEntrada("2025-09-11T14:00");
     guardarHoraSalida("2025-09-10T21:00");
      expect(calcularTarifa()).toEqual(null);
-  }); 
+  });  
 });
 
 

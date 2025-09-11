@@ -11,7 +11,6 @@ const form = document.querySelector("#estacionamiento-form");
 const div = document.querySelector("#resultado-div");
 
 mostrarTicketBtn.addEventListener("click", () => {
-  // alterna entre mostrar y ocultar
   if (opcionesTicketDiv.style.display === "none") {
     opcionesTicketDiv.style.display = "block";
   } else {
@@ -44,11 +43,20 @@ registrarHoraSalBtn.addEventListener("click", () => {
 calcularTarifaBtn.addEventListener("click", () => {
   const ticketSeleccionado = document.querySelector('input[name="ticket"]:checked').value;
   const tieneTicket = ticketSeleccionado === "con";
-
-  const totalFinal = perdidaTicket(tieneTicket);
-if (totalFinal === null) {
-    div.innerHTML += `<p La salida debe ser posterior a la entrada</p>`;
-  } else {
-    div.innerHTML += `<p><b>Total a pagar:</b> Bs ${totalFinal.toFixed(2)}</p>`;
+  if (!tieneTicket) {
+    div.innerHTML += `<p><b>Total a pagar:</b> Bs 80 (multa por ticket perdido)</p>`;
+    return;
   }
+  const tarifaDetallada = calcularTarifaDias();
+
+  if (tarifaDetallada === null) {
+    div.innerHTML += `<p>La salida debe ser posterior a la entrada</p>`;
+    return;
+  }
+  div.innerHTML += `<h3>Desglose por día:</h3>`;
+  for (const dia in tarifaDetallada.desglose) {
+    const detalle = tarifaDetallada.desglose[dia];
+    div.innerHTML += `<p><b>${dia}</b> → Subtotal: Bs ${detalle.subtotal}, Cobrado: Bs ${detalle.cobrado}</p>`;
+  }
+  div.innerHTML += `<p><b>Total a pagar:</b> Bs ${tarifaDetallada.total.toFixed(2)}</p>`;
 });

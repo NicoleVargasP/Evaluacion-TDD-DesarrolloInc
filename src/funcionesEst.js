@@ -37,6 +37,45 @@ function calcularTarifa() {
   if (total > tarifaMax) return tarifaMax;
   return parseFloat(total.toFixed(2));
 }
+function calcularTarifaDias() { 
+  const entrada = new Date(horaEntrada);
+  const salida = new Date(horaSalida);
+
+  if (salida <= entrada) {
+     return null;
+  }
+
+  const desglose = {}; 
+  let horaActual = new Date(entrada);
+
+  while (horaActual < salida) {
+    const diaClave = horaActual.toISOString().split("T")[0]; // YYYY-MM-DD
+    const hora = horaActual.getHours();
+
+    if (!desglose[diaClave]) {
+      desglose[diaClave] = { subtotal: 0, cobrado: 0 };
+    }
+
+    if (hora >= 22 || hora < 6) {
+      desglose[diaClave].subtotal += tarifaNocturna;
+    } else {
+      desglose[diaClave].subtotal += tarifa;
+    }
+
+    horaActual = new Date(horaActual.getTime() + 3600000); 
+  }
+
+  for (const dia in desglose) {
+    desglose[dia].cobrado = Math.min(desglose[dia].subtotal, tarifaMax);
+    desglose[dia].subtotal = parseFloat(desglose[dia].subtotal.toFixed(2));
+    desglose[dia].cobrado = parseFloat(desglose[dia].cobrado.toFixed(2));
+  }
+
+  const total = Object.values(desglose).reduce((sum, d) => sum + d.cobrado, 0);
+
+  return { desglose, total };
+}
+
 function perdidaTicket(tieneTicket){ 
     let tarifaTicket;
     let multa = 80;
@@ -48,4 +87,4 @@ else {
 }
 return tarifaTicket
 }
-export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket};
+export {guardarHoraEntrada, guardarHoraSalida, calcularTarifa, perdidaTicket, calcularTarifaDias};
