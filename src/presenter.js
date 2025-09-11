@@ -46,6 +46,9 @@ calcularTarifaBtn.addEventListener("click", () => {
   const tieneTicket = ticketSeleccionado === "con";
 
   const totalFinal = perdidaTicket(tieneTicket);
-
-  div.innerHTML += `<p><b>Total a pagar:</b> Bs ${totalFinal.toFixed(2)}</p>`;
+if (totalFinal === null) {
+    div.innerHTML += `<p La salida debe ser posterior a la entrada</p>`;
+  } else {
+    div.innerHTML += `<p><b>Total a pagar:</b> Bs ${totalFinal.toFixed(2)}</p>`;
+  }
 });

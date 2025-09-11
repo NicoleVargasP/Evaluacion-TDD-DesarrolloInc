@@ -43,6 +43,11 @@ describe("FuncionesEstacionamiento", () => {
     guardarHoraSalida("2025-09-10T21:00");
     expect(perdidaTicket(false)).toEqual(80.00);
   }); 
+    it("deberia verificar que no se ingrese una hora de entrada posterior a la hora d salida", () => {
+    guardarHoraEntrada("2025-09-11T14:00");
+    guardarHoraSalida("2025-09-10T21:00");
+     expect(calcularTarifa()).toEqual(null);
+  }); 
 });
 
 

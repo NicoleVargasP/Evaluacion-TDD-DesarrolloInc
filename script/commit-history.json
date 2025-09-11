@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b716e91d53b021d45e09a242c8661e4c017d22f",
     "author": "Nicole Vargas",
     "commit": {
       "date": "2025-09-11T00:46:17.000Z",
       "message": "style: Creacion del boton de verificacion de ticket d estacionamiento",
-      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/9b716e91d53b021d45e09a242c8661e4c017d22f"
     },
     "stats": {
       "total": 40,
@@ -281,6 +281,25 @@
     },
     "coverage": 93.33,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Nicole Vargas",
+    "commit": {
+      "date": "2025-09-11T04:20:00.000Z",
+      "message": "refactor: No se permite registrar una hora de entrada posterior a la hora de salida",
+      "url": "https://github.com/NicoleVargasP/Evaluacion-TDD-DesarrolloInc/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 11,
+      "deletions": 3,
+      "date": "2025-09-11"
+    },
+    "coverage": 96.67,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }
